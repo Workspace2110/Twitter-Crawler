@@ -43,9 +43,9 @@ class Crawler(object):
         prefs = {"profile.default_content_setting_values.notifications" : 2}
         chrome_options.add_experimental_option("prefs",prefs)
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
-        chrome_options.add_argument("headless")
-        chrome_options.add_argument("window-size=1920x1080")
-        chrome_options.add_argument("disable-gpu")
+        # chrome_options.add_argument("headless")
+        # chrome_options.add_argument("window-size=1920x1080")
+        # chrome_options.add_argument("disable-gpu")
         self.driver = webdriver.Chrome(executable_path=chromeDriverPath, chrome_options=chrome_options)
 
         # Clear all cookies
