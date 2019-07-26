@@ -6,10 +6,18 @@ Twitter Crawler Program
 """
 
 # imports packages
+
+from twitterCrawler import TwitterCrawler
 # ==================================
 
 def main():
-    pass
+    # Configures:
+    chromeDriverPath = "./chromedriver.exe"
+    email = "workspace2110@gmail.com"
+    passwd = "c39CH56D36"
+    # ==================================
+
+    TwitterCrawler(chromeDriverPath, email, passwd)
 
 if __name__ == '__main__':
     main()
